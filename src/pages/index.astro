@@ -1,0 +1,18 @@
+---
+// Javascript
+import ReactButton from '../components/ReactButton/ReactButton'
+import VueButton from '../components/VueButton/VueButton.vue'
+import Layout from '../layouts/Layout.astro'
+---
+
+<!-- HTML -->
+<Layout title="Astro web page">
+    <div class="bg-white p-8 rounded-lg">
+        <h1 class="text-lg font-bold">Hello Astro</h1>
+        <p>Welcome to my astro page</p>
+        <div class="flex gap-4 mt-4">
+            <ReactButton client:load />
+            <VueButton client:load />
+        </div>
+    </div>
+</Layout>
